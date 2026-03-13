@@ -1,0 +1,120 @@
+body{
+font-family:Arial;
+margin:0;
+text-align:center;
+background:#f0f8ff;
+}
+
+.gambarAwal{
+width:250px;
+margin:20px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#1d2cd0;
+color:white;
+cursor:pointer;
+margin:10px;
+}
+
+button:hover{
+background:#3a1be8;
+}
+
+.menuBackground{
+background-image:url("img/background_musik.jpg");
+background-size:cover;
+min-height:100vh;
+}
+
+.topBar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2c3e50;
+color:white;
+padding:10px 20px;
+}
+
+.homeBtn{
+background:#e74c3c;
+}
+
+.menuContent{
+margin-top:60px;
+}
+
+.materiCard{
+border:1px solid #ccc;
+padding:15px;
+margin:20px;
+border-radius:10px;
+background:white;
+}
+
+img{
+width:200px;
+}
+
+.soal{
+text-align:left;
+margin:20px;
+}
+
+button{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:8px;
+
+background:#ff9800;
+
+color:white;
+
+cursor:pointer;
+
+margin:10px;
+
+font-size:16px;
+
+transition: transform 0.2s ease, background 0.2s ease;
+
+}
+
+/* Saat mouse diarahkan */
+
+button:hover{
+
+background:#e68900;
+
+transform: scale(1.05);
+
+}
+
+/* Saat tombol diklik */
+
+button:active{
+
+transform: scale(1.2);
+
+}
+
+button{
+
+box-shadow:0 4px 6px rgba(0,0,0,0.2);
+
+}
+
+button:active{
+
+transform: scale(1.15);
+
+box-shadow:0 2px 3px rgba(0,0,0,0.3);
+
+}
+

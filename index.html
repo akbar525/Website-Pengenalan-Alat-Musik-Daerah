@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Media Pembelajaran Alat Musik Daerah</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HALAMAN UTAMA -->
+
+<div id="home">
+
+<h1>Media Pembelajaran Alat Musik Daerah</h1>
+
+<h3>SD Negeri Citerep</h3>
+
+<img src="img/orang_bermain_musik.png" class="gambarAwal">
+
+<p>Belajar mengenal alat musik tradisional melalui gambar, suara dan quiz interaktif.</p>
+
+<button onclick="mulaiBelajar()">Mulai Belajar</button>
+
+</div>
+
+
+
+<!-- MENU PEMBELAJARAN -->
+
+<div id="menu" class="menuBackground" style="display:none;">
+
+<div class="topBar">
+
+<h2>Menu Pembelajaran</h2>
+
+<button class="homeBtn" onclick="kembaliHome()">Home</button>
+
+</div>
+
+<div class="menuContent">
+
+<button onclick="showMateri()">Materi Alat Musik</button>
+
+<button onclick="showQuiz()">Quiz</button>
+
+</div>
+
+</div>
+
+
+
+<!-- MATERI -->
+
+<div id="materiPage" style="display:none;">
+
+<div class="topBar">
+
+<h2>Materi Alat Musik Daerah</h2>
+
+<button onclick="kembaliMenu()">Menu</button>
+
+</div>
+
+<div id="materi"></div>
+
+</div>
+
+
+
+<!-- QUIZ -->
+
+<div id="quizPage" style="display:none;">
+
+<div class="topBar">
+
+<h2>Quiz</h2>
+
+<button onclick="kembaliMenu()">Menu</button>
+
+</div>
+
+<div id="quizArea">
+
+<h3>Quiz Pengetahuan Alat Musik Daerah</h3>
+
+
+<div class="soal">
+<p>1. Angklung berasal dari daerah?</p>
+<input type="radio" name="q1" value="a"> Jawa Barat
+<input type="radio" name="q1" value="b"> Papua
+<input type="radio" name="q1" value="c"> Bali
+</div>
+
+<div class="soal">
+<p>2. Sasando berasal dari?</p>
+<input type="radio" name="q2" value="a"> NTT
+<input type="radio" name="q2" value="b"> Jawa Timur
+<input type="radio" name="q2" value="c"> Sumatera Barat
+</div>
+
+<div class="soal">
+<p>3. Kolintang berasal dari?</p>
+<input type="radio" name="q3" value="a"> Sulawesi Utara
+<input type="radio" name="q3" value="b"> Bali
+<input type="radio" name="q3" value="c"> Lampung
+</div>
+
+<div class="soal">
+<p>4. Tifa berasal dari?</p>
+<input type="radio" name="q4" value="a"> Papua
+<input type="radio" name="q4" value="b"> Jawa Tengah
+<input type="radio" name="q4" value="c"> Kalimantan
+</div>
+
+<div class="soal">
+<p>5. Saluang berasal dari?</p>
+<input type="radio" name="q5" value="a"> Sumatera Barat
+<input type="radio" name="q5" value="b"> Bali
+<input type="radio" name="q5" value="c"> Jawa Timur
+</div>
+
+<div class="soal">
+<p>6. Angklung dimainkan dengan cara?</p>
+<input type="radio" name="q6" value="a"> Digoyangkan
+<input type="radio" name="q6" value="b"> Dipukul
+<input type="radio" name="q6" value="c"> Ditiup
+</div>
+
+<div class="soal">
+<p>7. Sasando dimainkan dengan cara?</p>
+<input type="radio" name="q7" value="a"> Dipetik
+<input type="radio" name="q7" value="b"> Dipukul
+<input type="radio" name="q7" value="c"> Digoyang
+</div>
+
+<div class="soal">
+<p>8. Rebana dimainkan dengan cara?</p>
+<input type="radio" name="q8" value="a"> Dipukul
+<input type="radio" name="q8" value="b"> Ditiup
+<input type="radio" name="q8" value="c"> Dipetik
+</div>
+
+<div class="soal">
+<p>9. Talempong berasal dari?</p>
+<input type="radio" name="q9" value="a"> Sumatera Barat
+<input type="radio" name="q9" value="b"> Bali
+<input type="radio" name="q9" value="c"> Papua
+</div>
+
+<div class="soal">
+<p>10. Gendang dimainkan dengan cara?</p>
+<input type="radio" name="q10" value="a"> Dipukul
+<input type="radio" name="q10" value="b"> Digoyang
+<input type="radio" name="q10" value="c"> Ditiup
+</div>
+
+<br>
+
+<button onclick="cekJawaban()">Submit</button>
+
+<button onclick="ulangQuiz()">Ulangi Quiz</button>
+
+<h2 id="hasil"></h2>
+
+<div id="review"></div>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
